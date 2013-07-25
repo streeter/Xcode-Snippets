@@ -3,13 +3,16 @@
 //
 // Platform: All
 // Language: Objective-C
-// Completion Scope: Function or Method
+// Completion Scope: Class Implementation
 
-self = [super init];
-if (!self) {
-  return nil;
+- (instancetype)init
+{
+    self = [super init];
+    if (!self) {
+      return nil;
+    }
+
+    <#initializations#>
+
+    return self;
 }
-
-<#initializations#>
-
-return self;
